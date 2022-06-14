@@ -24,3 +24,7 @@
      - install dependencies 
      - start it with expo star 
 
+
+
+## Update 1 
+- Added footer and header components 

@@ -11,6 +11,9 @@ import Constants from "expo-constants";
 import * as Animatable from "react-native-animatable";
 import Collapsible from "react-native-collapsible";
 import Accordion from "react-native-collapsible/Accordion";
+import Header from "./shared/header";
+import Footer from "./shared/footer";
+
 
 
 const CONTENT = [
@@ -97,7 +100,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <ScrollView contentContainerStyle={{ paddingTop: 30 }}>
-          <Text style={styles.title}>Quotes Selector</Text>
+          <Header />
 
           <View style={styles.multipleToggle}>
             <Text style={styles.multipleToggle__title}>Turn On Multiple Select</Text>
@@ -159,6 +162,7 @@ export default class App extends Component {
             renderAsFlatList={false}
           />
         </ScrollView>
+                 <View> <Footer /></View>   
       </View>
     );
   }
